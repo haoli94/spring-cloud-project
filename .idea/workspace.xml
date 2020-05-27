@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca73264a-f33c-4875-b5b0-7f063662c646" name="Default Changelist" comment="" />
+    <list default="true" id="ca73264a-f33c-4875-b5b0-7f063662c646" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/尚硅谷SpringCloud第2季2020.3.2.mmap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/atguigu/springcloud/config/ApplicationContextConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/atguigu/springcloud/config/ApplicationContextConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/atguigu/springcloud/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/src/main/java/com/atguigu/springcloud/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/target/classes/com/atguigu/springcloud/config/ApplicationContextConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/target/classes/com/atguigu/springcloud/config/ApplicationContextConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-consumer-order80/target/classes/com/atguigu/springcloud/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-consumer-order80/target/classes/com/atguigu/springcloud/controller/OrderController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-eureka-server7001/src/main/java/com/atguigu/springcloud/EurekaMain7001.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-eureka-server7001/src/main/java/com/atguigu/springcloud/EurekaMain7001.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/PaymentMain8001.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/PaymentMain8001.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/controller/PaymentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/java/com/atguigu/springcloud/controller/PaymentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/target/classes/com/atguigu/springcloud/PaymentMain8001.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/target/classes/com/atguigu/springcloud/PaymentMain8001.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8001/target/classes/com/atguigu/springcloud/controller/PaymentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8001/target/classes/com/atguigu/springcloud/controller/PaymentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8002/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8002/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-provider-payment8002/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-provider-payment8002/target/classes/application.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,6 +65,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -56,6 +76,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1cMlylFLGxuJhv9dxmUEnzleJs3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -68,6 +89,7 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/cloud-provider-payment8001" />
@@ -217,7 +239,7 @@
       <workItem from="1590397443690" duration="1533000" />
       <workItem from="1590399005313" duration="105000" />
       <workItem from="1590399121976" duration="1669000" />
-      <workItem from="1590429893494" duration="13302000" />
+      <workItem from="1590429893494" duration="15951000" />
     </task>
     <servers />
   </component>
@@ -237,6 +259,10 @@
       <screen x="0" y="23" width="1680" height="969" />
     </state>
     <state x="320" y="98" width="1180" height="676" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.969@0.23.1680.969" timestamp="1590547145441" />
+    <state x="473" y="316" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590551205122">
+      <screen x="0" y="23" width="1680" height="969" />
+    </state>
+    <state x="473" y="316" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.969@0.23.1680.969" timestamp="1590551205122" />
     <state x="653" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1590398918928">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
@@ -253,38 +279,38 @@
       <screen x="0" y="23" width="1680" height="969" />
     </state>
     <state x="431" y="439" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.23.1680.969@0.23.1680.969" timestamp="1590484972409" />
-    <state width="1434" height="260" key="GridCell.Tab.0.bottom" timestamp="1590548123012">
+    <state width="1434" height="260" key="GridCell.Tab.0.bottom" timestamp="1590550757647">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
-    <state width="1434" height="260" key="GridCell.Tab.0.bottom/0.23.1680.969@0.23.1680.969" timestamp="1590548123012" />
-    <state width="1434" height="260" key="GridCell.Tab.0.center" timestamp="1590548123011">
+    <state width="1434" height="260" key="GridCell.Tab.0.bottom/0.23.1680.969@0.23.1680.969" timestamp="1590550757647" />
+    <state width="1434" height="260" key="GridCell.Tab.0.center" timestamp="1590550757646">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
-    <state width="1434" height="260" key="GridCell.Tab.0.center/0.23.1680.969@0.23.1680.969" timestamp="1590548123011" />
-    <state width="1434" height="260" key="GridCell.Tab.0.left" timestamp="1590548123011">
+    <state width="1434" height="260" key="GridCell.Tab.0.center/0.23.1680.969@0.23.1680.969" timestamp="1590550757646" />
+    <state width="1434" height="260" key="GridCell.Tab.0.left" timestamp="1590550757645">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
-    <state width="1434" height="260" key="GridCell.Tab.0.left/0.23.1680.969@0.23.1680.969" timestamp="1590548123011" />
-    <state width="1434" height="260" key="GridCell.Tab.0.right" timestamp="1590548123012">
+    <state width="1434" height="260" key="GridCell.Tab.0.left/0.23.1680.969@0.23.1680.969" timestamp="1590550757645" />
+    <state width="1434" height="260" key="GridCell.Tab.0.right" timestamp="1590550757647">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
-    <state width="1434" height="260" key="GridCell.Tab.0.right/0.23.1680.969@0.23.1680.969" timestamp="1590548123012" />
-    <state width="1434" height="260" key="GridCell.Tab.1.bottom" timestamp="1590548123013">
+    <state width="1434" height="260" key="GridCell.Tab.0.right/0.23.1680.969@0.23.1680.969" timestamp="1590550757647" />
+    <state width="1434" height="260" key="GridCell.Tab.1.bottom" timestamp="1590550757649">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
-    <state width="1434" height="260" key="GridCell.Tab.1.bottom/0.23.1680.969@0.23.1680.969" timestamp="1590548123013" />
-    <state width="1434" height="260" key="GridCell.Tab.1.center" timestamp="1590548123013">
+    <state width="1434" height="260" key="GridCell.Tab.1.bottom/0.23.1680.969@0.23.1680.969" timestamp="1590550757649" />
+    <state width="1434" height="260" key="GridCell.Tab.1.center" timestamp="1590550757648">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
-    <state width="1434" height="260" key="GridCell.Tab.1.center/0.23.1680.969@0.23.1680.969" timestamp="1590548123013" />
-    <state width="1434" height="260" key="GridCell.Tab.1.left" timestamp="1590548123012">
+    <state width="1434" height="260" key="GridCell.Tab.1.center/0.23.1680.969@0.23.1680.969" timestamp="1590550757648" />
+    <state width="1434" height="260" key="GridCell.Tab.1.left" timestamp="1590550757648">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
-    <state width="1434" height="260" key="GridCell.Tab.1.left/0.23.1680.969@0.23.1680.969" timestamp="1590548123012" />
-    <state width="1434" height="260" key="GridCell.Tab.1.right" timestamp="1590548123013">
+    <state width="1434" height="260" key="GridCell.Tab.1.left/0.23.1680.969@0.23.1680.969" timestamp="1590550757648" />
+    <state width="1434" height="260" key="GridCell.Tab.1.right" timestamp="1590550757649">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
-    <state width="1434" height="260" key="GridCell.Tab.1.right/0.23.1680.969@0.23.1680.969" timestamp="1590548123013" />
+    <state width="1434" height="260" key="GridCell.Tab.1.right/0.23.1680.969@0.23.1680.969" timestamp="1590550757649" />
     <state x="378" y="168" key="Maven.ArtifactSearchDialog" timestamp="1590546114558">
       <screen x="0" y="23" width="1680" height="969" />
     </state>

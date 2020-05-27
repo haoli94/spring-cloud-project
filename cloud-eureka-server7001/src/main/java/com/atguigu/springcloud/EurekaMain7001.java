@@ -13,3 +13,6 @@ public class EurekaMain7001 {
     SpringApplication.run(EurekaMain7001.class, args);
   }
 }
+
+
+// Eureka 属于 CAP 里的 AP分支, 某个时刻某个服务不可用了, Eureka 不会对其立即清理, 依旧会保留信息

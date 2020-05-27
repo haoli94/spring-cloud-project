@@ -16,7 +16,8 @@ import javax.annotation.Resource;
 @Slf4j
 public class OrderController {
 // RestTemplate 需要注入容器
-  public static final String PAYMENT_URL = "http://localhost:8001";
+//  public static final String PAYMENT_URL = "http://localhost:8001"; 单点
+  public static final String PAYMENT_SERVICE = "http://CLOUD-PAYMENT-SERVICE"; //集群
   @Resource // @Autowired
   private RestTemplate restTemplate;
 
@@ -24,14 +25,14 @@ public class OrderController {
   // 客服端都是发get请求
   public CommonResult<Payment> create(Payment payment){
     String endPoint = "/payment/create";
-    return restTemplate.postForObject(PAYMENT_URL + endPoint, payment, CommonResult.class);
+    return restTemplate.postForObject(PAYMENT_SERVICE + endPoint, payment, CommonResult.class);
   }
 
   @GetMapping("consumer/payment/get/{id}")
   // 客服端都是发get请求
   public CommonResult<Payment> getPaymentById(@PathVariable("id") Long id) {
     String endPoint = "/payment/get/";
-    log.info(PAYMENT_URL + endPoint + id);
-    return restTemplate.getForObject(PAYMENT_URL + endPoint + id, CommonResult.class);
+    log.info(PAYMENT_SERVICE + endPoint + id);
+    return restTemplate.getForObject(PAYMENT_SERVICE + endPoint + id, CommonResult.class);
   }
 }
