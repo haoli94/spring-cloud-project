@@ -1,0 +1,6 @@
+com/atguigu/springcloud/dao/PaymentDao.class
+com/atguigu/springcloud/PaymentMain8002.class
+com/atguigu/springcloud/controller/PaymentController.class
+com/atguigu/springcloud/service/impl/PaymentServiceImpl.class
+com/atguigu/springcloud/service/PaymentService.class
+META-INF/cloud-provider-payment8002.kotlin_module
