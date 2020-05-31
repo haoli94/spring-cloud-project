@@ -12,7 +12,7 @@ public class ApplicationContextConfig {
   // 通过微服务名称调用, 一个微服务名称下面注册了多个服务节点
   // 集群不知道调哪个服务要开load balance才行, round robin之类的随机选择返回
   @Bean
-  @LoadBalanced
+//  @LoadBalanced
   public RestTemplate getRestTemplate() {
     return new RestTemplate();
   }

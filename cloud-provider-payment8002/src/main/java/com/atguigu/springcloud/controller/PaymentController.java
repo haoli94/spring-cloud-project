@@ -51,4 +51,9 @@ public class PaymentController {
       return new CommonResult(444, "Opps, oh no, no such payment record in database with id: " + id + ".", null);
     }
   }
+
+  @GetMapping(value = "/payment/lb")
+  public String getPaymentLB(){
+    return serverPort;
+  }
 }

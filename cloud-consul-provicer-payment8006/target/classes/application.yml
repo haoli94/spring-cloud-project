@@ -1,0 +1,15 @@
+server:
+  port: 8006
+
+spring:
+  application:
+    name: cloud-payment-service                             # 要被注册到注册中心去
+  cloud:
+    consul:
+      host: localhost
+      # host: 127.0.0.1:2181,127.0.0.1:2182,127.0.0.1:2183 集群配置
+      port: 8500
+      discovery:
+        service-name: ${spring.application.name}
+        #hostname:127.0.0.1
+
