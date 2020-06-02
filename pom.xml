@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.atguigu.springcloud</groupId>
+    <groupId>com.atguigu.springcloud.springcloud</groupId>
     <artifactId>cloud202005</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
@@ -19,6 +19,10 @@
         <module>cloud-consumerzk-order80</module>
         <module>cloud-consul-provicer-payment8006</module>
         <module>cloud-consul-order80</module>
+        <module>cloud-consumer-feign-order80</module>
+        <module>cloud-eureka-server7003</module>
+        <module>cloud-provider-hystrix-payment8001</module>
+        <module>cloud-consumer-feign-hystrix-order80</module>
     </modules>
     <packaging>pom</packaging>
 

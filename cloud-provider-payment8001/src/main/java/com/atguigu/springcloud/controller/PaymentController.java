@@ -3,6 +3,7 @@ package com.atguigu.springcloud.controller;
 import com.atguigu.springcloud.entities.CommonResult;
 import com.atguigu.springcloud.entities.Payment;
 import com.atguigu.springcloud.service.PaymentService;
+import com.mysql.jdbc.TimeUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -12,13 +13,14 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 @RestController
 @Slf4j // 日志打印
 public class PaymentController {
   @Autowired private PaymentService paymentService;
 
-  @Value("${server.port}")
+  @Value("${service.port}")
   private String serverPort;
 
   @Resource private DiscoveryClient discoveryClient;
@@ -84,6 +86,16 @@ public class PaymentController {
 
   @GetMapping(value = "/payment/lb")
   public String getPaymentLB(){
+    return serverPort;
+  }
+
+  @GetMapping(value = "/payment/feign/timeout")
+  public String getPaymentTimeout(){
+    try {
+      TimeUnit.SECONDS.sleep(2);
+    } catch (InterruptedException e) {
+      e.printStackTrace();
+    }
     return serverPort;
   }
 }

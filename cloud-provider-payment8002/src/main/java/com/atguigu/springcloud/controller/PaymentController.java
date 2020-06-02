@@ -8,12 +8,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.concurrent.TimeUnit;
+
 @RestController
 @Slf4j // 日志打印
 public class PaymentController {
   @Autowired private PaymentService paymentService;
 
-  @Value("${server.port}")
+  @Value("${service.port}")
   private String serverPort;
 
   // 之前在SpringMVC是requestMapping 这里可以写细致一点
@@ -29,16 +31,16 @@ public class PaymentController {
     }
   }
 
-// 直接 call
-//  public CommonResult create(Payment payment) {
-//    int result = paymentService.create(payment);
-//    log.info("insert result + " + result);
-//    if (result > 0) {
-//      return new CommonResult(200, "Yes, insert into database.", result);
-//    } else {
-//      return new CommonResult(444, "Opps, insert failed.", null);
-//    }
-//  }
+  // 直接 call
+  //  public CommonResult create(Payment payment) {
+  //    int result = paymentService.create(payment);
+  //    log.info("insert result + " + result);
+  //    if (result > 0) {
+  //      return new CommonResult(200, "Yes, insert into database.", result);
+  //    } else {
+  //      return new CommonResult(444, "Opps, insert failed.", null);
+  //    }
+  //  }
 
   @GetMapping(value = "/payment/get/{id}") // 调用是Get方法
   // 外面调用 @requestBody
@@ -46,14 +48,26 @@ public class PaymentController {
     Payment payment = paymentService.getPaymentById(id);
     log.info("find result + " + payment);
     if (payment != null) {
-      return new CommonResult(200, "Yes, haha, find payment record in database, serverPort: " + serverPort, payment);
+      return new CommonResult(
+          200, "Yes, haha, find payment record in database, serverPort: " + serverPort, payment);
     } else {
-      return new CommonResult(444, "Opps, oh no, no such payment record in database with id: " + id + ".", null);
+      return new CommonResult(
+          444, "Opps, oh no, no such payment record in database with id: " + id + ".", null);
     }
   }
 
   @GetMapping(value = "/payment/lb")
-  public String getPaymentLB(){
+  public String getPaymentLB() {
+    return serverPort;
+  }
+
+  @GetMapping(value = "/payment/feign/timeout")
+  public String getPaymentTimeout() {
+    try {
+      TimeUnit.SECONDS.sleep(2);
+    } catch (InterruptedException e) {
+      e.printStackTrace();
+    }
     return serverPort;
   }
 }

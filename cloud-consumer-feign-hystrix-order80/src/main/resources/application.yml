@@ -1,0 +1,18 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: cloud-order-service
+
+eureka:
+  client:
+    register-with-eureka: true
+    # true 表示向注册中心注册自己, 将自己注册进EurekaServer 默认为true
+    service-url:
+      # 设置与eureka server交互的地址查询服务和注册服务都需要依赖这个地址
+      defaultZone: http://localhost:7003/eureka
+
+ribbon:
+  ReadTimeout: 50000
+  ConnectTimeout: 50000

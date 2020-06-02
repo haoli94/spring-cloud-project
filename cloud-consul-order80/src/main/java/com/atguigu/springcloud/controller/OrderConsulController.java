@@ -13,7 +13,7 @@ import javax.annotation.Resource;
 public class OrderConsulController {
   public static final String PAYMENT_SERVICE = "http://cloud-payment-service"; //集群
 
-  @Value("${server.port}")
+  @Value("${service.port}")
   private String serverPort;
 
   @Resource

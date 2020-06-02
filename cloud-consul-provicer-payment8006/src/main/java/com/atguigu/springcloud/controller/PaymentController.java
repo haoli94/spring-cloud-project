@@ -10,7 +10,7 @@ import java.util.UUID;
 @RestController
 @Slf4j
 public class PaymentController {
-  @Value("${server.port}")
+  @Value("${service.port}")
   private String serverPort;
 
   @GetMapping(value = "/payment/consul")

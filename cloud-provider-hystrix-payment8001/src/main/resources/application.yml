@@ -1,0 +1,24 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: cloud-payment-hystrix-service                             # 要被注册到注册中心去
+
+eureka:
+  client:
+    register-with-eureka: true
+    # true 表示向注册中心注册自己, 将自己注册进EurekaServer 默认为true
+    fetch-registry: true
+    # true 表示是否从EurekaServer抓取已有信息, 默认为true。单节点无所谓, 集群必须配置为true才能配合ribbon使用负载均衡
+    service-url:
+      # 设置与eureka server交互的地址查询服务和注册服务都需要依赖这个地址
+      defaultZone: http://localhost:7003/eureka
+      #都要注册
+  instance:
+    instance-id: payment8001
+
+
+ribbon:
+  ReadTimeout: 50000
+  ConnectTimeout: 50000
